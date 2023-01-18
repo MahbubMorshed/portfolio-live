@@ -50,7 +50,13 @@ const Work = () => {
           "React JS",
           "Next JS",
           "Three JS",
+          "Django",
+          "Sanity",
           "3D Art",
+          "Stripe",
+          "CSS",
+          "SCSS",
+          "Tailwind",
           "All",
         ].map((item, index) => (
           <div
