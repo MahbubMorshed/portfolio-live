@@ -3,6 +3,10 @@ import { images } from "../../constants";
 import { motion } from "framer-motion";
 import "./header.scss";
 import { AppWrap } from "../../wrapper";
+import { FaHeadset } from "react-icons/fa";
+
+import WhatsAppWidget from "react-whatsapp-chat-widget";
+import "react-whatsapp-chat-widget/index.css";
 
 const scaleVariants = {
   whileInView: {
@@ -18,6 +22,38 @@ const scaleVariants = {
 const Header = () => {
   return (
     <div className="app__header app__flex">
+      {/* <WhatsAppWidget
+        phoneNo="8801708133999"
+        position="right"
+        widgetWidth="300px"
+        widgetWidthMobile="260px"
+        autoOpen={true}
+        autoOpenTimer={5000}
+        messageBox={true}
+        messageBoxTxt="Hi Team, is there any related service available ?"
+        iconSize="40"
+        iconColor="white"
+        iconBgColor="tomato"
+        headerIcon="https://proficientdesigners.in/wp-content/themes/pd/img/logo-new.png"
+        headerIconColor="pink"
+        headerTxtColor="black"
+        headerBgColor="tomato"
+        headerTitle="John Doe"
+        headerCaption="Online"
+        bodyBgColor="#bbb"
+        chatPersonName="Support"
+        chatMessage={
+          <>
+            Hi there 👋 <br />
+            <br /> How can I help you?
+          </>
+        }
+        footerBgColor="#999"
+        btnBgColor="yellow"
+        btnTxtColor="black"
+        btnTxt="Start Chat"
+      /> */}
+
       <motion.div
         whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 0.5 }}

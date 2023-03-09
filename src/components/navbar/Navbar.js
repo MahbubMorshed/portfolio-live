@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 
 import { images } from "../../constants";
 import "./navbar.scss";
+import Room from "./Room";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
@@ -11,6 +12,7 @@ const Navbar = () => {
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
+        {/* <Room /> */}
         <img src={images.logo} alt="logo" />
       </div>
       <ul className="app__navbar-links">
